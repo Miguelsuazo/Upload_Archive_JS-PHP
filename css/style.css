@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #17183B;
+}
+
+/*FORM*/
+.container-form{
+    background-color: aliceblue;
+    width: 430px;
+    border-radius: 20px;
+    padding: 40px;
+    max-height: 800px;
+    
+}
+
+.container-form header{
+    color: #17183B;
+    font-size: 27px;
+    font-weight: 800px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-form form {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #17183B ;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+.container-form form i{
+    font-size: 40px;
+}
+
+form :where(i,p){
+    color: #17183B;
+}
+
+form p {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+/*SECTION*/
+section .row{
+    list-style: none;
+    background-color: #17183B;
+    height: 60px; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFCF9;
+}
+
+section .row i{
+    color:#FFFCF9 ;
+    font-size: 32px;
+}
+section .details span{
+    font-size: 18px;
+}
+
+/* CONTAINER UPLOAD*/
+.progress-area .row .content{
+    width: 100%;
+    margin-left: 18px;
+}
+
+.progress-area .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.progress-area .content .progress-bar{
+    border-radius: 30px;
+    height: 6px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+.content .progress-bar .progress{
+    height: 100%;
+    width: 0%;
+    background-color: #7899D4;
+    border-radius: inherit;
+}
+
+/*CONTAINER UPLOAD AREA*/
+.uploaded-area{
+    min-height: 230px;
+    overflow-y: scroll;
+   
+
+}
+
+.uploaded-area::-webkit-scrollbar{
+    width: 0px;
+    background-color: red;
+    color: red;
+  
+  }
+
+.uploaded-area.onprogress{
+    max-height: 150px;
+}
+
+
+.uploaded-area .row .content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  
+}
+.uploaded-area .row .details{
+    display: flex;
+    margin-left: 18px;
+    flex-direction: column;
+   
+}
+
+.uploaded-area .row .details .size{
+    font-size: 9px;
+    color: #FFFCF9;
+}
+
+.uploaded-area i.fa-circle-check{
+    font-size: 16px;
+}
+
